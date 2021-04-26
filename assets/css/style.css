@@ -121,6 +121,8 @@
     {
       width:165px;
       border-radius: 19px;
+      border:none;
+      font-weight: bold;
     }
 
     .content-dialog .btn-secondary
