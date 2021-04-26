@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/delivery.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/work.js"></script>
 </head>
 
@@ -80,7 +81,7 @@
 					</div>
 					<div class="col-sm-6 sold">
 						<label>Sold your board to a third party?</label>
-						<div><a href="">Remove Dashboard</a></div>
+						<div><a href="javascript:;" data-toggle="modal" data-target="#dashboard_modal">Remove Dashboard</a></div>
 					</div>
 				</div>
 			</div>
@@ -100,6 +101,29 @@
 			</div>
 		</div>
 	</div>	
+
+	<div class="modal fade center" id="dashboard_modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header" style="border-bottom: none;padding-bottom: 0px;">
+					<div class="close" data-dismiss="modal" aria-label="Close">
+			          <i class="fa fa-times"></i>
+			        </div>
+				</div>
+				<div class="modal-body" style="padding: 0px;">
+					<div class="content-dialog">
+						<h5 style="text-align: center;">Remove Board?</h5>
+						<p>This action will relinquish your ownership of this Foil and allow it to be claimed by another owner.</p>	
+						<div class="btn-container">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+							<button type="button" class="btn btn-primary">REMOVE</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
